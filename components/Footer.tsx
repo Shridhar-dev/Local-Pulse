@@ -45,7 +45,7 @@ const Footer: NextPage<Props> = ({}) => {
                   name=""
                   id=""
                   placeholder="example@gmail.com"
-                  className="xl:p-4 p-2 rounded-l-2xl"
+                  className="xl:p-4 p-2 rounded-l-2xl outline-none text-black"
                 />
                 <button className="bg-[#ff7955] hover:bg-[#ff5733] xl:p-4 rounded-r-2xl p-2">
                   Suscribe
@@ -55,7 +55,7 @@ const Footer: NextPage<Props> = ({}) => {
           </div>
           <div className="h-full w-2/5  xl:p-20 pt-10 pr-8 ">
             <ul className="flex flex-col gap-1  md:text-4xl text-2xl xl:text-left text-right  font-bold font-grotesqueBold w-full ">
-              <Link href={"#"}>Home</Link>
+              <Link href={"#"} className="hover:underline">Home</Link>
               <Link href={"#"}>Local Pubs</Link>
               <Link href={"#"}>Restaurants</Link>
               <Link href={"#"}>Clubs</Link>
@@ -278,37 +278,37 @@ const Footer: NextPage<Props> = ({}) => {
                     <path
                       d="M13.25 20.75H7V22H13.25V20.75Z"
                       fill="white"
-                      fill-opacity="0.8"
+                      fillOpacity="0.8"
                     ></path>
                     <path
                       d="M10.75 23.25H7V24.5H10.75V23.25Z"
                       fill="white"
-                      fill-opacity="0.8"
+                      fillOpacity="0.8"
                     ></path>
                     <path
                       d="M15.75 23.25H12V24.5H15.75V23.25Z"
                       fill="white"
-                      fill-opacity="0.8"
+                      fillOpacity="0.8"
                     ></path>
                     <path
                       d="M20.75 23.25H17V24.5H20.75V23.25Z"
                       fill="white"
-                      fill-opacity="0.8"
+                      fillOpacity="0.8"
                     ></path>
                     <path
                       d="M20.75 20.75H14.5V22H20.75V20.75Z"
                       fill="white"
-                      fill-opacity="0.8"
+                      fillOpacity="0.8"
                     ></path>
                     <path
                       d="M28.25 20.75H22V22H28.25V20.75Z"
                       fill="white"
-                      fill-opacity="0.8"
+                      fillOpacity="0.8"
                     ></path>
                     <path
                       d="M35.75 20.75H29.5V22H35.75V20.75Z"
                       fill="white"
-                      fill-opacity="0.8"
+                      fillOpacity="0.8"
                     ></path>
                   </g>
                   <defs>
@@ -320,8 +320,8 @@ const Footer: NextPage<Props> = ({}) => {
                       y2="-6.39998"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#060B0E"></stop>
-                      <stop offset="1" stop-color="#254764"></stop>
+                      <stop stopColor="#060B0E"></stop>
+                      <stop offset="1" stopColor="#254764"></stop>
                     </linearGradient>
                     <linearGradient
                       id="paint1_linear_607_3616"
@@ -331,8 +331,8 @@ const Footer: NextPage<Props> = ({}) => {
                       y2="18.6761"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="white" stop-opacity="0.01"></stop>
-                      <stop offset="1" stop-color="white"></stop>
+                      <stop stopColor="white" stopOpacity="0.01"></stop>
+                      <stop offset="1" stopColor="white"></stop>
                     </linearGradient>
                     <linearGradient
                       id="paint2_linear_607_3616"
@@ -342,8 +342,8 @@ const Footer: NextPage<Props> = ({}) => {
                       y2="39.9051"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="white" stop-opacity="0.01"></stop>
-                      <stop offset="1" stop-color="white"></stop>
+                      <stop stopColor="white" stopOpacity="0.01"></stop>
+                      <stop offset="1" stopColor="white"></stop>
                     </linearGradient>
                     <linearGradient
                       id="paint3_linear_607_3616"
@@ -353,8 +353,8 @@ const Footer: NextPage<Props> = ({}) => {
                       y2="29.5"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="white" stop-opacity="0.01"></stop>
-                      <stop offset="1" stop-color="white"></stop>
+                      <stop stopColor="white" stopOpacity="0.01"></stop>
+                      <stop offset="1" stopColor="white"></stop>
                     </linearGradient>
                     <linearGradient
                       id="paint4_linear_607_3616"
@@ -364,8 +364,8 @@ const Footer: NextPage<Props> = ({}) => {
                       y2="17"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#FAD961"></stop>
-                      <stop offset="1" stop-color="#F7955D"></stop>
+                      <stop stopColor="#FAD961"></stop>
+                      <stop offset="1" stopColor="#F7955D"></stop>
                     </linearGradient>
                   </defs>
                 </svg>
@@ -403,8 +403,8 @@ const Footer: NextPage<Props> = ({}) => {
                       y2="14.8011"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#005AB9"></stop>
-                      <stop offset="1" stop-color="#1E3764"></stop>
+                      <stop stopColor="#005AB9"></stop>
+                      <stop offset="1" stopColor="#1E3764"></stop>
                     </linearGradient>
                     <linearGradient
                       id="paint1_linear_607_3612"
@@ -414,8 +414,8 @@ const Footer: NextPage<Props> = ({}) => {
                       y2="11.8606"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#FBA900"></stop>
-                      <stop offset="1" stop-color="#FFD800"></stop>
+                      <stop stopColor="#FBA900"></stop>
+                      <stop offset="1" stopColor="#FFD800"></stop>
                     </linearGradient>
                   </defs>
                 </svg>
