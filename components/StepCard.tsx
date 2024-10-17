@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
 import RegisterImage from "@/assets/register.png"
-import gsap from 'gsap'
 
 
 interface StepCardProps {

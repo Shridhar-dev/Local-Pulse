@@ -1,9 +1,9 @@
 import React from 'react';
 import { Store, Utensils, Users } from 'lucide-react';
-
+//@ts-ignore
 const FeatureCard = ({ icon: Icon, title, description }) => (
   <div className="flex flex-col items-center text-center p-4">
-    <Icon className="w-12 h-12 text-green-400 mb-4" />
+    <Icon className="w-12 h-12 text-gray-800 mb-4" />
     <h3 className="lg:text-2xl text-xl font-semibold mb-2">{title}</h3>
     <p className="lg:text-lg md:text-base text-sm text-gray-700">{description}</p>
   </div>
@@ -38,15 +38,12 @@ const LocalPulseFeatures = () => {
   ];
 
   return (
-    <div className="text-black p-8 w-[80vw] my-5 flex flex-col justify-evenly bg-white">
-      <h2 className="sm:text-5xl text-3xl font-bold text-center text-green-400 mb-8">Empowering Community Commerce</h2>
+    <div className="text-black p-8 w-full  my-5 flex flex-col justify-evenly bg-white overflow-hidden">
+      <h2 className="sm:text-5xl text-3xl font-bold text-center text-gray-800 mb-8">Empowering Community Commerce</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
         {features.map((feature, index) => (
           <FeatureCard key={index} {...feature} />
         ))}
-      </div>
-      <div className="w-full mb-10">
-        <ImageGallery />
       </div>
     </div>
   );
