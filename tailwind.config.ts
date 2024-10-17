@@ -13,7 +13,8 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       fontFamily:{
-        "grotesque":"var(--font-grotesque)"
+        "grotesque":"var(--font-grotesque)",
+        "grotesqueBold":"var(--font-grotesqueBold)"
       }
     },
   },
