@@ -36,7 +36,7 @@ const Footer: NextPage<Props> = ({}) => {
               </div>
             </div>
             <div className="flex flex-col gap-2 w-full">
-              <p>
+              <p className="view">
                 Would you like to stay informed about our new product releases?
               </p>
               <form action="" className="rounded-2xl xl:w-full w-1/4 flex">
@@ -56,13 +56,13 @@ const Footer: NextPage<Props> = ({}) => {
           <div className="h-full w-2/5  xl:p-20 pt-10 pr-8 ">
             <ul className="flex flex-col gap-1  md:text-4xl text-2xl xl:text-left text-right  font-bold font-grotesqueBold w-full ">
               <Link href={"#"} className="hover:underline">Home</Link>
-              <Link href={"#"}>Local Pubs</Link>
-              <Link href={"#"}>Restaurants</Link>
-              <Link href={"#"}>Clubs</Link>
-              <Link href={"#"}>Grocery</Link>
-              <Link href={"#"}>Dine</Link>
-              <Link href={"#"}>Community</Link>
-              <Link href={"#"}>Reviews</Link>
+              <Link href={"#"} className="hover:underline">Local Pubs</Link>
+              <Link href={"#"} className="hover:underline">Restaurants</Link>
+              <Link href={"#"} className="hover:underline">Clubs</Link>
+              <Link href={"#"} className="hover:underline">Grocery</Link>
+              <Link href={"#"} className="hover:underline">Dine</Link>
+              <Link href={"#"} className="hover:underline">Community</Link>
+              <Link href={"#"} className="hover:underline">Reviews</Link>
             </ul>
           </div>
         </div>

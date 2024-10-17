@@ -10,8 +10,8 @@ export default function Home() {
     <div className="font-grotesque bg-white">
       <Hero/>
       <Categories />
+      {/* <Working /> */}
       <Featured/>
-      <Working />
       <Footer/>
     </div>
   );
