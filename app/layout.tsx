@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Bricolage_Grotesque } from "next/font/google";
 import { ReactLenis } from '@/lib/lenis'
 import "./globals.css";
 
@@ -12,6 +13,11 @@ const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
+});
+const grotesque = Bricolage_Grotesque({
+  subsets:["latin"],
+  variable: "--font-grotesque",
+  weight: ["200", "300", "400", "500","600", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -28,7 +34,7 @@ export default function RootLayout({
     <ReactLenis root>
       <html lang="en">
         <body
-          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+          className={`${geistSans.variable} ${geistMono.variable} ${grotesque.variable} antialiased`}
         >
           {children}
         </body>
