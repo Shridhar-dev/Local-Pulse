@@ -17,7 +17,14 @@ const geistMono = localFont({
 const grotesque = localFont({
   src:"./fonts/Grotesk/RightGrotesk-Medium.otf",
   variable: "--font-grotesque",
+  weight:"100 900"
 });
+
+const grotesqueBold =localFont({
+  src:"./fonts/Grotesk/RightGrotesk-CompactBlack.otf",
+  variable: "--font-grotesqueBold",
+  weight:"100 900"
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -33,7 +40,7 @@ export default function RootLayout({
     <ReactLenis root>
       <html lang="en">
         <body
-          className={`${geistSans.variable} ${geistMono.variable} ${grotesque.variable} antialiased`}
+          className={`${geistSans.variable} ${geistMono.variable} ${grotesque.variable} ${grotesqueBold.variable} antialiased`}
         >
           {children}
         </body>
