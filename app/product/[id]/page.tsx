@@ -9,7 +9,7 @@ interface StoreMapProps {
 const StoreMap = ({ location }: StoreMapProps) => {
   return (
     <iframe
-      src={`https://www.google.com/maps/embed/v1/place?q=${encodeURIComponent(location)}&key=AIzaSyCVQRX_xnKYM8r33Z7NbXhuzTGQ1Xje5HU`}
+      src={`https://www.google.com/maps/embed/v1/place?q=${encodeURIComponent(location)}&key={YOUR_API_KEY}`}
       width="100%"
       height="100%"
       style={{ border: 0 }}
