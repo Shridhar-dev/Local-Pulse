@@ -16,7 +16,7 @@ const MenuSection: React.FC<MenuSectionProps> = ({ title, links }) => (
     <ul className="space-y-2">
       {links.map((link, index) => (
         <li key={index} className="footer-link view hover:underline">
-          <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors duration-300">
+          <a href={link === 'Shopping' ? "/product/1" : "#"} className="text-gray-600 hover:text-gray-900 transition-colors duration-300">
             {link}
           </a>
         </li>
@@ -247,7 +247,7 @@ const Menu = () => {
         </div>
         <MovingTextRibbon
           word="LOCAL PULSE"
-          className="w-screen text-[#f3e1c7] absolute bottom-0 sm:-rotate-[20deg] sm:left-24 sm:-bottom-12 md:left-96 md:bottom-0 bg-[#e9c490] sm:text-8xl text-8xl link"
+          className="w-screen text-[#f3e1c7] absolute bottom-0 sm:-rotate-[20deg] sm:left-24 sm:-bottom-12 md:left-96 md:bottom-0 bg-[#e2d3bc] sm:text-8xl text-8xl link"
         />
 
       </div>
