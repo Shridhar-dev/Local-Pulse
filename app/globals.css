@@ -25,3 +25,9 @@ body {
     text-wrap: balance;
   }
 }
+
+.bg-concrete {
+  background-image: url("../assets/concrete.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+}
