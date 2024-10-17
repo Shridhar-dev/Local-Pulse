@@ -20,7 +20,7 @@ const Featured: NextPage<Props> = ({}) => {
 
         <div className='md:font-grotesqueBold font-grotesque md:text-6xl text-4xl'>Final Sale: Up to 40% Off</div>
         <div className='md:text-xl text-xs text-balance font-sans'>Don't miss the SRFACE Final Sale with discounts up to 40% on wetsuits and accessories. Shop our full suits, shorties, springsuits and neoprene tops now while stocks last!</div>
-        <div className='text-[#ff7955] hover:underline hover:text-black transition duration-100 ease-in-out cursor-pointer'>
+        <div className='text-[#ff7955] hover:underline hover:text-black transition duration-100 ease-in-out cursor-pointer view'>
           Shop now &rarr;
         </div>
         </div>
@@ -34,7 +34,7 @@ const Featured: NextPage<Props> = ({}) => {
 
         <div className='md:font-grotesqueBold font-grotesque md:text-6xl text-4xl'>Final Sale: Up to 40% Off</div>
         <div className='md:text-xl text-xs text-balance font-sans'>Don't miss the SRFACE Final Sale with discounts up to 40% on wetsuits and accessories. Shop our full suits, shorties, springsuits and neoprene tops now while stocks last!</div>
-        <div className='text-[#ff7955] hover:underline hover:text-black transition duration-100 ease-in-out cursor-pointer'>
+        <div className='text-[#ff7955] hover:underline hover:text-black transition duration-100 ease-in-out cursor-pointer view'>
           Shop now &rarr;
         </div>
         </div>
