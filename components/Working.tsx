@@ -54,7 +54,7 @@ function Working() {
         <div ref={containerRef} className="relative">
             <div ref={sectionRef} className="pt-10 flex flex-col justify-between min-h-screen bg-black overflow-hidden" id="working">
                 <div className="flex flex-col md:flex-row items-start justify-between px-10">
-                    <p className="text-5xl md:text-8xl font-bold">How does it work?</p>
+                    <p className="text-5xl md:text-8xl font-grotesqueBold">How does it work?</p>
                     <p className="font-thin text-2xl mt-5">Reaching your customers is more <br/> simpler than you think!</p>
                     <div className="text-4xl hidden md:block animate-spin duration-1000 self-center">
                         <Image

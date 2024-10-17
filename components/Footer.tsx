@@ -48,7 +48,7 @@ const Footer: NextPage<Props> = ({}) => {
                   className="xl:p-4 p-2 rounded-l-2xl outline-none text-black"
                 />
                 <button className="bg-[#ff7955] hover:bg-[#ff5733] xl:p-4 rounded-r-2xl p-2">
-                  Suscribe
+                  Subscribe
                 </button>
               </form>
             </div>
