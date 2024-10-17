@@ -8,6 +8,29 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef } from "react";
 gsap.registerPlugin(ScrollTrigger)
 
+const stepCardsData = [
+    {
+      bgColor: '#9ac5fa',
+            title: '2 Step Registration',
+      description: 'Using just your Aadhaar and PAN card, you can register on Local Pulse and reach a wider audience.'
+    },
+    {
+      bgColor: '#f5c1ab',
+            title: 'Easy Listing Process',
+      description: 'List your products or services quickly with our user-friendly interface. Add photos, descriptions, and set your prices.'
+    },
+    {
+      bgColor: '#f8d38b',
+            title: 'Connect with Community',
+      description: 'Engage with local buyers and sellers. Build relationships and grow your network within your community.'
+    },
+    {
+      bgColor: '#a8a8ef',
+            title: 'Secure Transactions',
+      description: 'Enjoy safe and secure transactions with our integrated payment system. Buyer protection and seller guarantees included.'
+    }
+  ]
+
 function Working() {
     const containerRef = useRef(null);
     const sectionRef = useRef(null);
@@ -67,11 +90,9 @@ function Working() {
                     </div>
                 </div>
                 <div ref={scrollStepsRef} className="flex w-full relative" id="scroll-steps">
-                    <StepCard bgColor="#9ac5fa"/>
-                    <StepCard bgColor="#f5c1ab"/>
-                    <StepCard bgColor="#f8d38b"/>
-                    <StepCard bgColor="#a8a8ef"/>
-                    <StepCard bgColor="#e6fcfe"/>
+                {stepCardsData.map((card, index) => (
+        <StepCard key={index} {...card} />
+      ))}
                 </div>
             </div>
         </div>

@@ -10,16 +10,20 @@ import { FlipLink } from "./Zoop";
 interface Props {}
 
 const Scene = () => {
-  let texture = useTexture("./club.png");
-  let tex = useRef(null);
+  const texture = useTexture("./club.png");
+  const meshRef = useRef<THREE.Mesh>(null);
+
   useFrame((_, delta) => {
-    if (tex.current) (tex.current as THREE.Mesh).rotation.y += delta;
+    if (meshRef.current) {
+      meshRef.current.rotation.y += delta * 0.5; // Reduced rotation speed
+    }
   });
+
   return (
     <group rotation={[0, 0.2, 0.5]}>
-      <mesh ref={tex}>
-        <cylinderGeometry args={[1, 1, 1, 60, 60, true]} />
-        <meshStandardMaterial
+      <mesh ref={meshRef}>
+        <cylinderGeometry args={[1, 1, 1, 32, 1, true]} /> {/* Reduced segment count */}
+        <meshBasicMaterial
           side={THREE.DoubleSide}
           map={texture}
           transparent
@@ -44,11 +48,16 @@ const Hero: NextPage<Props> = ({}) => {
   }, []);
   return (
     <div className="w-full h-screen bg-black relative overflow-hidden">
-      <Canvas camera={{ fov: 22 }} flat fallback className="opacity-50 absolute inset-0">
-        <OrbitControls enableZoom={false} />
-        <ambientLight />
-        <Scene />
-      </Canvas>
+     <Canvas
+    camera={{ fov: 22 }}
+    flat
+    className="opacity-50 absolute inset-0"
+    dpr={[1, 2]} // Limit pixel ratio
+    performance={{ min: 0.5 }} // Allow frame rate to drop for better performance
+  >
+    <OrbitControls enableZoom={false} />
+    <Scene />
+  </Canvas>
       
       <div className="absolute inset-x-0 top-1/4 text-center z-20 text-[#f5f1eb] flex justify-center items-center gap-3  text-3xl select-none font-grotesque">
 
