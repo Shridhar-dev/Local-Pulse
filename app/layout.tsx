@@ -14,10 +14,9 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
-const grotesque = Bricolage_Grotesque({
-  subsets:["latin"],
+const grotesque = localFont({
+  src:"./fonts/Grotesk/RightGrotesk-Medium.otf",
   variable: "--font-grotesque",
-  weight: ["200", "300", "400", "500","600", "700", "800"],
 });
 
 export const metadata: Metadata = {
