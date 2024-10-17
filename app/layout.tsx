@@ -3,6 +3,8 @@ import localFont from "next/font/local";
 import { Bricolage_Grotesque } from "next/font/google";
 import { ReactLenis } from '@/lib/lenis'
 import "./globals.css";
+import Cursor from "@/components/Cursor";
+import Menu from "@/components/Menu";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -40,8 +42,10 @@ export default function RootLayout({
     <ReactLenis root>
       <html lang="en">
         <body
-          className={`${geistSans.variable} ${geistMono.variable} ${grotesque.variable} ${grotesqueBold.variable} antialiased`}
+          className={`${geistSans.variable} ${geistMono.variable} ${grotesque.variable} ${grotesqueBold.variable} antialiased !cursor-none`}
         >
+          <Cursor/>
+          <Menu/>
           {children}
         </body>
       </html>

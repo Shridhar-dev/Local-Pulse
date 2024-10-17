@@ -11,8 +11,8 @@ export default function Home() {
     <div className="font-grotesque bg-white">
       <MostSearched />
       <Categories />
+      {/* <Working /> */}
       <Featured/>
-      <Working />
       <Footer/>
     </div>
   );

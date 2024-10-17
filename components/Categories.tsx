@@ -4,8 +4,8 @@ import CategoryCard from './CategoryCard'
 
 function Categories() {
   return (
-    <div className='min-h-screen text-black p-10 text-center'>
-        <p className='text-6xl md:text-8xl font-grotesqueBold'>Categories</p>
+    <div className='min-h-screen bg-[#f5f1eb] text-black p-10 text-center'>
+        <p className='text-6xl md:text-8xl'>Categories</p>
         <p className='text-xl md:text-3xl mt-5'>Explore wide range of products from your own local shopkeepers</p>
         <div className='grid grid-cols-12 gap-5 md:gap-10 mt-10'>
             <CategoryCard type="Clothing" src={"https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNsb3RoZXN8ZW58MHx8MHx8fDA%3D"}/>
